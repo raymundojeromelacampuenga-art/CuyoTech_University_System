@@ -1,16 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { api, useFetch } from "./App.jsx";
+import { api, useFetch } from "./api.js";
 import { Stat, Badge, Head, CountUp, Sk, STEPS } from "./StudentPortal.jsx";
-import {
-  Data,
-  Table,
-  Chips,
-  Dlg,
-  useAct,
-  useAuth,
-  peso,
-} from "./StudentPortal.jsx";
+import { Data, Table, Chips, Dlg, useAct, useAuth, peso } from "./shared.jsx";
 
 const NEXT = {
   Submitted: ["Processing", "Start processing"],
