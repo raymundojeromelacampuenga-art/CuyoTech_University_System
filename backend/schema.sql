@@ -1,7 +1,4 @@
 -- CuyoTech SSIS database (3NF). Running this file RESETS the database.
-CREATE DATABASE IF NOT EXISTS cuyotech_ssis CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE cuyotech_ssis;
-
 SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS activity_log, clearances, payments, document_requests, grades, courses, students, programs, departments, users;
 SET FOREIGN_KEY_CHECKS = 1;
